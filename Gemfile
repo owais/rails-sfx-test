@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.10'
-
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6' 
 
@@ -59,10 +56,18 @@ gem "signalfx-rack-tracer", "~> 0.1.0"
 
 gem "signalfx-redis-instrumentation", "~> 0.1.0"
 
-gem "signalfx-sidekiq-opentracing", "~> 0.1.0"
+# gem "signalfx-sidekiq-opentracing", "~> 0.1.0"
 
 gem "signalfx-nethttp-instrumentation", "~> 0.2.0"
 
-gem "sidekiq", "~> 5.2"
+# gem "sidekiq", "~> 5.2"
 
 gem "signalfx-sinatra-instrumentation", "~> 0.1.0"
+
+gem "sinatra", "= 1.4.8"
+
+gem "sidekiq", "= 5.2"
+
+gem "sfx-sidekiq-opentracing", "~> 0.0.4"
+
+gem "rails", "= 4.2.11.1"

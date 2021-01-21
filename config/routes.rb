@@ -3,6 +3,7 @@ require 'sidekiq/web'
 Rails.application.routes.draw do
   get 'test/hello'
   mount Sidekiq::Web => '/sidekiq'
+  match 'api' => Api::Core, :via => [:get]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
